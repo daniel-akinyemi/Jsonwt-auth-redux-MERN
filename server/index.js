@@ -7,6 +7,6 @@ const app = express()
 
 const port = process.env.PORT || 3002
 
-cors()
+app.use(cors())
 // just a comment
 app.listen(port, ()=>{`Sever started on localhost://${port}`})
